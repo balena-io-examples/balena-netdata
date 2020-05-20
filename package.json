@@ -1,0 +1,19 @@
+{
+  "name": "balena-netdata",
+  "version": "0.0.1",
+  "description": "Netdata configuration for internal on-device monitoring",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balena-io-playground/balena-netdata.git"
+  },
+  "author": "Matthew McGinn <mamcgi@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/balena-io-playground/balena-netdata/issues"
+  },
+  "homepage": "https://github.com/balena-io-playground/balena-netdata#readme"
+}

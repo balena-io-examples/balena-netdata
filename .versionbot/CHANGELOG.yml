@@ -1,0 +1,14 @@
+- commits:
+    - subject: add repo.yml & .resinci.yml
+      hash: 3aa899113306659e8233ce08b3497e58f47ed252
+      body: ''
+      footer:
+        Connects-to: '#2'
+        connects-to: '#2'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+  version: 0.1.1
+  date: 2020-05-27T20:41:16.093Z

@@ -1,4 +1,16 @@
 - commits:
+    - subject: add deploy with balena button
+      hash: 0752d203ac112c99c62efca79f5c46145eb19693
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+  version: 0.1.2
+  date: 2020-05-27T20:52:36.288Z
+- commits:
     - subject: add repo.yml & .resinci.yml
       hash: 3aa899113306659e8233ce08b3497e58f47ed252
       body: ''

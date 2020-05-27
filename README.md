@@ -7,3 +7,4 @@ there is anything else worth exposing for your project!
 
 With the project in place and deployed to device, you can navigate to `{{IP or hostname.local}}:19999` to view the
 statistics that netdata is collecting. Happy monitoring!
+

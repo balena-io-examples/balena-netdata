@@ -1,4 +1,18 @@
 - commits:
+    - subject: add a Dockerfile for armv7hf devices
+      hash: 07e13b61624b11c9a8d6059d7b1a8b4b46b28807
+      body: ''
+      footer:
+        Connects-to: 'https://github.com/balena-io-examples/balena-netdata/issues/14'
+        connects-to: 'https://github.com/balena-io-examples/balena-netdata/issues/14'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+  version: 0.1.6
+  date: 2020-05-29T19:19:56.312Z
+- commits:
     - subject: remove httpcheck for supervisor
       hash: 127bdd46629a5212bddb6f4cb1937405486d0877
       body: |

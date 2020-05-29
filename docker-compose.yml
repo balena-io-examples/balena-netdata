@@ -7,8 +7,9 @@ services:
     build: netdata
     # this could be removed if we could simply use env vars in our configuration (only to pass in supervisor API URL)
     network_mode: 'host'
-    ports:
-      - '19999:19999'
+    #don't need both `ports` and `network_mode: host`
+    #ports:
+    #  - '19999:19999'
     environment:
       - PGID=988
         # we get this injected as unix:///...sock, but netdata doesn't like that

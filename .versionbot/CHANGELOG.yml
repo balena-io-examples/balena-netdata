@@ -1,4 +1,19 @@
 - commits:
+    - subject: remove httpcheck for supervisor
+      hash: 127bdd46629a5212bddb6f4cb1937405486d0877
+      body: |
+        more trouble than it is worth at the moment
+      footer:
+        Connects-to: '#9'
+        connects-to: '#9'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+  version: 0.1.5
+  date: 2020-05-29T19:13:35.881Z
+- commits:
     - subject: disable npm CI run
       hash: a6ac54d790b39760849c431d390875c31c48be79
       body: ''

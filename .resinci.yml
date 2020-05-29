@@ -4,3 +4,5 @@ docker:
       dockerfile: Dockerfile
       docker_repo: balena/balena-netdata
       publish: false
+npm:
+  run: false

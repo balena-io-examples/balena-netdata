@@ -1,4 +1,16 @@
 - commits:
+    - subject: disable npm CI run
+      hash: a6ac54d790b39760849c431d390875c31c48be79
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+  version: 0.1.4
+  date: 2020-05-29T19:04:01.889Z
+- commits:
     - subject: update docs with remote connection and known issues
       hash: 6b71f9c22d9bbd68d6ab6cdb86209975730e934c
       body: ''

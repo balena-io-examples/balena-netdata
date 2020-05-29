@@ -19,4 +19,3 @@ netdata to listen on port 80 directly.
 
 ## Current issues
 * Devices < balenaOS 2.48 are unable to resolve container statistics.
-* Only `aarch64` and `amd64` architectures are supported.

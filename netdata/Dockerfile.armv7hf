@@ -2,4 +2,5 @@ FROM netdata/netdata:latest-armhf
 
 WORKDIR /etc/netdata
 COPY ./netdata.conf ./netdata.conf
-COPY balenad.conf ./python.d/dockerd.conf
+COPY ./rpi-charts.d.conf ./charts.d.conf
+COPY ./balenad.conf ./python.d/dockerd.conf

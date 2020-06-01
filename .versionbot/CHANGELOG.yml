@@ -1,4 +1,18 @@
 - commits:
+    - subject: add support for rpi-compatible sensor detection
+      hash: 68649878171937e8157ce26ef814f1d3d59936e4
+      body: ''
+      footer:
+        Connects-to: '#10'
+        connects-to: '#10'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+  version: 0.1.7
+  date: 2020-05-29T20:17:36.143Z
+- commits:
     - subject: add a Dockerfile for armv7hf devices
       hash: 07e13b61624b11c9a8d6059d7b1a8b4b46b28807
       body: ''

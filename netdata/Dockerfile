@@ -31,7 +31,7 @@ COPY ./balenad.conf ./python.d/dockerd.conf
 # working on my pi4.
 COPY ./rpi-charts.d.conf ./charts.d.conf
 
-# TODO: File bug with Alpine about this
+# Upstream bug: https://gitlab.alpinelinux.org/alpine/aports/-/issues/11678
 RUN mkdir /var/lib/netdata && \
 	chown netdata:root /var/lib/netdata && \
 	chmod 770 /var/lib/netdata

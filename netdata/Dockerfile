@@ -1,7 +1,14 @@
 FROM alpine:3.12.0
+ENV DOCKER_GRP netdata
+ENV DOCKER_USR netdata
+
+ENV NETDATA_PORT 19999
+
 RUN apk update
 RUN apk add netdata --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
-RUN apk add curl jq
+RUN apk add curl \
+	jq \
+	shadow
 
 WORKDIR /etc/netdata
 
@@ -28,4 +35,6 @@ COPY ./rpi-charts.d.conf ./charts.d.conf
 RUN mkdir /var/lib/netdata && \
 	chown netdata:root /var/lib/netdata && \
 	chmod 770 /var/lib/netdata
-CMD ["/usr/sbin/netdata", "-D"]
+
+COPY ./upstream-docker-run.sh /usr/sbin/upstream-docker-run.sh
+ENTRYPOINT ["/usr/sbin/upstream-docker-run.sh"]

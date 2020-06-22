@@ -17,6 +17,7 @@ RUN sed -i -e'/# by default do not expose the netdata port/,+1d' ./netdata.conf
 # 2.48.0 balenaOS I'm running).  Now that I copy this back in, I'm not
 # seeing containers listed.  Not sure what's going on; I'll track down
 # later.  In the meantime, leaving it in here.
+RUN mkdir ./python.d
 COPY ./balenad.conf ./python.d/dockerd.conf
 
 # TODO: File bug with Alpine about this

@@ -20,6 +20,10 @@ RUN sed -i -e'/# by default do not expose the netdata port/,+1d' ./netdata.conf
 RUN mkdir ./python.d
 COPY ./balenad.conf ./python.d/dockerd.conf
 
+# TODO: This is meant to turn on sensors, but it doesn't seem to be
+# working on my pi4.
+COPY ./rpi-charts.d.conf ./charts.d.conf
+
 # TODO: File bug with Alpine about this
 RUN mkdir /var/lib/netdata && \
 	chown netdata:root /var/lib/netdata && \

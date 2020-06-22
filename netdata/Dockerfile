@@ -3,12 +3,13 @@ RUN apk update
 RUN apk add netdata --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 RUN apk add curl jq
 
+WORKDIR /etc/netdata
 
 # TODO: Copying in netdata.conf from repo results in "Access to file
 # is not permitted: /usr/share/webapss/netdata//index.html" error in
 # dashboard.  I'll track down later.  In the meantime, we remove these
 # two lines to let the daemon listen on all addresses.
-RUN sed -i -e'/# by default do not expose the netdata port/,+1d' /etc/netdata/netdata.conf
+RUN sed -i -e'/# by default do not expose the netdata port/,+1d' ./netdata.conf
 # COPY ./netdata.conf /etc/netdata/netdata.conf
 
 # TODO: Originally, I didn't copy this in and saw my containers listed

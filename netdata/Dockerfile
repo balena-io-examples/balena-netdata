@@ -34,5 +34,10 @@ RUN mkdir /var/lib/netdata && \
 	chown netdata:root /var/lib/netdata && \
 	chmod 770 /var/lib/netdata
 
+# Note: see `upstream-docker.run.sh` for where
+# /var/lib/netdata/cloud.d/cloud.conf is created; as this is a static
+# volume, we need to create it in the startup script.
+
 COPY ./upstream-docker-run.sh /usr/sbin/upstream-docker-run.sh
+
 ENTRYPOINT ["/usr/sbin/upstream-docker-run.sh"]

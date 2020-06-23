@@ -23,6 +23,20 @@ if [ -n "${PGID}" ]; then
   usermod -a -G "${PGID}" "${DOCKER_USR}" || echo >&2 "Could not add netdata user to group docker with ID ${PGID}"
 fi
 
+# This disables Agent-Cloud functionality
+# (https://learn.netdata.cloud/docs/agent/aclk#disable-the-aclk);
+# practically speaking, this removes the "Sign in" buttons for Netdata
+# Cloud.
+
+mkdir -p /var/lib/netdata/cloud.d
+cat > /var/lib/netdata/cloud.d/cloud.conf <<EOF
+[global]
+  enabled = no
+EOF
+
+chown -R netdata:root /var/lib/netdata/cloud.d/
+chmod -R 770 /var/lib/netdata/cloud.d/
+
 # See https://github.com/netdata/netdata/issues/4173
 # exec /usr/sbin/netdata -u "${DOCKER_USR}" -D -s /host -p "${NETDATA_PORT}" -W set web "web files group" root -W set web "web files owner" root "$@"
 exec /usr/sbin/netdata -u "${DOCKER_USR}" -D -s /host -p "${NETDATA_PORT}" "$@"

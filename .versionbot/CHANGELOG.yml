@@ -1,4 +1,23 @@
 - commits:
+    - subject: Use Alpine netdata package for the container
+      hash: 9fb99a82804297be05fb8ea22349487ecdabe868
+      body: |
+        By using the Alpine package in an Alpine container, instead of the
+        Netdata container, we shrink the container size from ~ 300MB to 20MB.
+
+        One note: graphs for the various containers show up approximately 1
+        minute after the netdata container starts up. Presumably this is the
+        time it takes netdata to ingest data on the various cgroups.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Hugh Brown <hugh@balena.io>
+        signed-off-by: Hugh Brown <hugh@balena.io>
+      author: Hugh Brown
+      nested: []
+  version: 0.2.0
+  date: 2020-07-15T17:59:46.483Z
+- commits:
     - subject: add support for rpi-compatible sensor detection
       hash: 68649878171937e8157ce26ef814f1d3d59936e4
       body: ''

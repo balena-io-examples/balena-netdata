@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'meta: add codeowners'
+      hash: 0abbd3bf06adc2781636ff4854d79a1c361e61c1
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew McGinn <matthew@balena.io>
+        signed-off-by: Matthew McGinn <matthew@balena.io>
+      author: Matthew McGinn
+      nested: []
+  version: 0.2.1
+  date: 2020-07-20T12:33:55.639Z
+- commits:
     - subject: Use Alpine netdata package for the container
       hash: 9fb99a82804297be05fb8ea22349487ecdabe868
       body: |

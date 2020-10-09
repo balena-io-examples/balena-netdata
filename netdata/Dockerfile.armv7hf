@@ -5,7 +5,7 @@ ENV DOCKER_USR netdata
 ENV NETDATA_PORT 19999
 
 RUN apk update && \
-	apk add netdata --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted && \
+	apk add netdata --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted && \
 	apk add curl \
 		jq \
 		shadow

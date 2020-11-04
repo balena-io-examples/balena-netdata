@@ -1,4 +1,19 @@
 - commits:
+    - subject: 'Correct repo for armv7hf to community, not testing'
+      hash: 368adbb36647aa6cbb1c7a954bbbe2baaefd8f38
+      body: ''
+      footer:
+        Connects-to: '#23'
+        connects-to: '#23'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Hugh Brown <hugh@balena.io>
+        signed-off-by: Hugh Brown <hugh@balena.io>
+      author: Hugh Brown
+      nested: []
+  version: 0.2.2
+  date: 2020-10-27T16:44:39.999Z
+- commits:
     - subject: 'meta: add codeowners'
       hash: 0abbd3bf06adc2781636ff4854d79a1c361e61c1
       body: ''

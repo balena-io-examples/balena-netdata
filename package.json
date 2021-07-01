@@ -1,6 +1,6 @@
 {
   "name": "balena-netdata",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Netdata configuration for internal on-device monitoring",
   "main": "index.js",
   "scripts": {

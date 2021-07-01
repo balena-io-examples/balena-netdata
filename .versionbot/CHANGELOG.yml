@@ -1,4 +1,13 @@
 - commits:
+    - subject: 'patch: Delete Codeowners'
+      hash: b137eb3a847666130beff35ef3ab100e428ac0ae
+      body: ''
+      footer: {}
+      author: Vipul Gupta
+      nested: []
+  version: 0.2.3
+  date: 2021-07-01T10:23:27.748Z
+- commits:
     - subject: 'Correct repo for armv7hf to community, not testing'
       hash: 368adbb36647aa6cbb1c7a954bbbe2baaefd8f38
       body: ''
